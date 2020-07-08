@@ -6,9 +6,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "dotenv": "^8.2.0",
+    "firebase": "^7.15.5",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-id-swiper": "^4.0.0",
+    "react-inview-monitor": "^2.3.0",
+    "react-scripts": "3.4.1",
+    "react-simple-animate": "^3.3.9",
+    "react-slick": "^0.26.1",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.1.1",
+    "swiper": "^5.4.5"
   },
   "scripts": {
     "start": "react-scripts start",

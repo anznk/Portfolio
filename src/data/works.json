@@ -1,0 +1,36 @@
+	{
+    "work":[
+      {
+        "name": "My Portfolio",
+        "text": "This is my portfolio project with React.js.",
+        "imgPath": "/img/portfolio.png",
+        "development": "React.js/ HTML5/ SCSS/ Firebase/ GoogleAnalytics/ GitHub",
+        "website":"",
+        "github":""
+      },
+      {
+        "name": "ccccc",
+        "text": "cccc",
+        "imgPath": "/img/FirstView.jpg",
+        "development": "React/ HTML5/ SCSS/",
+        "website":"",
+        "github":""
+      },
+      {
+        "name": "bbb",
+        "text": "bbbb",
+        "imgPath": "/img/FirstView.jpg",
+        "development": "React/ HTML5/ SCSS/",
+        "website":"",
+        "github":""
+      },
+      {
+        "name": "aaaa",
+        "text": "aaaa",
+        "imgPath": "/img/FirstView.jpg",
+        "development": "React/ HTML5/ SCSS/",
+        "website":"",
+        "github":""
+      }
+    ]
+	}

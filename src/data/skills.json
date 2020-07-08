@@ -1,0 +1,52 @@
+{
+    "skills":[
+      {
+        "name": "React",
+        "logoPath": "/img/logo_react.svg"
+      },
+      {
+        "name": "JavaScript",
+        "logoPath": "/img/logo_javascript.svg"
+      },
+      {
+        "name": "HTML5",
+        "logoPath": "/img/logo_html5.svg"
+      },
+      {
+        "name": "CSS3",
+        "logoPath": "/img/logo_css3.svg"
+      },
+      {
+        "name": "Node.js",
+        "logoPath": "/img/logo_nodejs.svg"
+      },
+      {
+        "name": "Express",
+        "logoPath": "/img/logo_express.svg"
+      },
+      {
+        "name": "Java",
+        "logoPath": "/img/logo_java.svg"
+      },
+      {
+        "name": "C",
+        "logoPath": "/img/logo_c.svg"
+      },
+      {
+        "name": "MongoDB",
+        "logoPath": "/img/logo_mongodb.svg"
+      },
+      {
+        "name": "Firebase",
+        "logoPath": "/img/logo_firebase.svg"
+      },
+      {
+        "name": "Netlify",
+        "logoPath": "/img/logo_netlify.svg"
+      },
+      {
+        "name": "Heroku",
+        "logoPath": "/img/logo_heroku.svg"
+      }
+    ]
+  }
