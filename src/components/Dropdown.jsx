@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import Media from 'react-media';
 import classNames from 'classnames';
 import HamburgerIcon from './HamburgerIcon';
+import '../styles/Header.scss';
 
 const Dropdown = () => {
   const navMenu = [

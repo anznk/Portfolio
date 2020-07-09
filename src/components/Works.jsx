@@ -59,7 +59,7 @@ const Works =()=> {
 				<div className="sub-works">
 					
 					{/* <Swiper {...params}> */}
-					<ul class="list_works">
+					<ul className="list_works">
 					{value && value.map( work => (
 						<li key={work.name} className="skill-item" onClick={() => changeValue(work)}>
 							<img src={work.imgPath}  alt={work.name} />
@@ -70,7 +70,7 @@ const Works =()=> {
 				</div>
 			</div>
 			<div className="show_sp wrap-works">
-				<ul class="list_works">
+				<ul className="list_works">
 					{value && value.map( work => (
 						<li key={work.name} className="skill-item">
 							<img src={work.imgPath}  alt={work.name} />

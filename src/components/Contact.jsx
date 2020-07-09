@@ -21,7 +21,7 @@ const Contact =()=> {
 			<div className="title-sec">
 				<h2>Contact</h2>
 			</div>
-			<div class="wrap-contact">
+			<div className="wrap-contact">
 			{/* <h3>Interested in working together?</h3> */}
 			<form onSubmit={handleSubmit}>
 			<dl>

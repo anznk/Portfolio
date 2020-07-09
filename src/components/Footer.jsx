@@ -7,7 +7,7 @@ const text = "Designed & Built by Anzu Nakayama♡"
 const Footer =()=> {
 	return (
     <footer>
-		<div class="center_area">
+		<div className="center_area">
 			<small>{text}</small>
 		</div>
     </footer>
