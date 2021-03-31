@@ -2,7 +2,7 @@
 My portfolio website
 
 [Website](https://anzunakayama.dev/)
-[![DEMO](https://user-images.githubusercontent.com/53921381/111699793-ce21f000-87f5-11eb-9a14-189b3f1985cb.png)](https://anzunakayama.dev/)
+[![DEMO](https://user-images.githubusercontent.com/53921381/113221122-4d251880-9239-11eb-89b1-bf5ddf2a8832.png)](https://anzunakayama.dev/)
 
 # Technology
  Front-end: React.js, Html5, scss
