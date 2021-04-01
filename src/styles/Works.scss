@@ -37,7 +37,7 @@
 	}
 	.detail{
 		height: 60px;
-		width: 600px;
+		width: 500px;
 		margin: 0 auto;
 	}
 	.button-area{
@@ -87,8 +87,9 @@
 	height: 600px;
 	overflow: hidden;
 	.skill-item{
-		margin-bottom: 10px;
+		// margin-bottom: 5px;
 		img{
+			cursor: pointer;
 			width: 350px;
 		}
 	}

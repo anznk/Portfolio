@@ -27,12 +27,13 @@ const Works =()=> {
 	const params = {
 		direction: 'vertical',
 		autoplay: {
-			delay: 2000
+			delay: 2200
 		},
 		loop: true,  
-		slidesPerView:5,
-    spaceBetween: 300
+		slidesPerView:3,
+    spaceBetween: 20
   }
+	
 	return (
 		<section className="sec-Works" id="works">
 			<div className="title-sec">
@@ -57,16 +58,13 @@ const Works =()=> {
 					</div>
 				</div>
 				<div className="sub-works">
-					
-					{/* <Swiper {...params}> */}
-					<ul className="list_works">
-					{value && value.map( work => (
-						<li key={work.name} className="skill-item" onClick={() => changeValue(work)}>
-							<img src={work.imgPath}  alt={work.name} />
-						</li>
-					))}
-					</ul>
-					{/* </Swiper> */}
+					<Swiper {...params}>
+						{value && value.map( work => (
+							<div key={work.name} className="skill-item" onClick={() => changeValue(work)}>
+								<img src={work.imgPath}  alt={work.name} />
+							</div>
+						))}
+					</Swiper>
 				</div>
 			</div>
 			<div className="show_sp wrap-works">
