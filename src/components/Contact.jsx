@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/Contact.scss';
 import axios from 'axios';
-// import firebase from '../firebase/Firebase';
-// const firebase = require("firebase");
+// import {functions} from '../firebase/config';
+// const functions = require("firebase");
 // require("firebase/functions");
 
 
@@ -15,21 +15,25 @@ const Contact =()=> {
 
   const handleChange = event => {
     setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
+
+    
   };
   const handleSubmit = event => {
     event.preventDefault();
-    axios({
-      method: "POST", 
-      url:"http://localhost:3002/send", 
-      data:  contactInfo
-    }).then((response)=>{
-      if (response.data.status === 'success'){
-        alert("Message Sent."); 
-        resetForm()
-      }else if(response.data.status === 'fail'){
-        alert("Message failed to send.")
-      }
-    })
+    // let sendMail = functions.functions().httpsCallable('sendMail');
+    // sendMail(contactInfo);
+    // axios({
+    //   method: "POST", 
+    //   url:"http://localhost:3002/send", 
+    //   data:  contactInfo
+    // }).then((response)=>{
+    //   if (response.data.status === 'success'){
+    //     alert("Message Sent."); 
+    //     resetForm()
+    //   }else if(response.data.status === 'fail'){
+    //     alert("Message failed to send.")
+    //   }
+    // })
   };
   const resetForm =() => {
      setContactInfo({ 
