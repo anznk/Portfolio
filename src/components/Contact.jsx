@@ -22,7 +22,9 @@ const Contact =()=> {
     })
   }
   const sendEmail = () => {
+    console.log("formData",formData);
     Axios.post(
+      // 'http://localhost:5001/myportfolio-6f01c/us-central1/submit',
       'https://us-central1-myportfolio-6f01c.cloudfunctions.net/submit',
       formData
     )
@@ -39,11 +41,11 @@ const Contact =()=> {
       })
   }
 
-  const [contactInfo, setContactInfo] = useState({
-    name: '',
-  	email: '',
-  	message: ''
-  });
+  // const [contactInfo, setContactInfo] = useState({
+  //   name: '',
+  // 	email: '',
+  // 	message: ''
+  // });
 
   // const handleChange = event => {
   //   setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
@@ -51,13 +53,13 @@ const Contact =()=> {
   // const handleSubmit = event => {
   //   event.preventDefault();
   // };
-  const resetForm =() => {
-     setContactInfo({ 
-        name: '',
-  	    email: '',
-      	message: ''
-     });
-  }
+  // const resetForm =() => {
+  //    setContactInfo({ 
+  //       name: '',
+  // 	    email: '',
+  //     	message: ''
+  //    });
+  // }
 
 	return (
 		<section className="sec-Contact" id="contact">
