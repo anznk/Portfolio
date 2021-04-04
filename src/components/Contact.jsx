@@ -1,40 +1,56 @@
 import React, { useState } from 'react';
 import '../styles/Contact.scss';
-import axios from 'axios';
-// import {functions} from '../firebase/config';
-// const functions = require("firebase");
-// require("firebase/functions");
+import { Axios, db } from '../firebase/firebaseConfig'
+
 
 
 const Contact =()=> {
+  const [formData, setFormData] = useState({})
+  const updateInput = e => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    })
+  }
+  const handleSubmit = event => {
+    event.preventDefault()
+    sendEmail()
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    })
+  }
+  const sendEmail = () => {
+    Axios.post(
+      'https://us-central1-myportfolio-6f01c.cloudfunctions.net/submit',
+      formData
+    )
+      .then(res => {
+        db.collection('emails').add({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          time: new Date(),
+        })
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+
   const [contactInfo, setContactInfo] = useState({
     name: '',
   	email: '',
   	message: ''
   });
 
-  const handleChange = event => {
-    setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
-
-    
-  };
-  const handleSubmit = event => {
-    event.preventDefault();
-    // let sendMail = functions.functions().httpsCallable('sendMail');
-    // sendMail(contactInfo);
-    // axios({
-    //   method: "POST", 
-    //   url:"http://localhost:3002/send", 
-    //   data:  contactInfo
-    // }).then((response)=>{
-    //   if (response.data.status === 'success'){
-    //     alert("Message Sent."); 
-    //     resetForm()
-    //   }else if(response.data.status === 'fail'){
-    //     alert("Message failed to send.")
-    //   }
-    // })
-  };
+  // const handleChange = event => {
+  //   setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
+  // };
+  // const handleSubmit = event => {
+  //   event.preventDefault();
+  // };
   const resetForm =() => {
      setContactInfo({ 
         name: '',
@@ -57,8 +73,10 @@ const Contact =()=> {
         <input
           type="text"
           name="name"
-          value={contactInfo.name}
-          onChange={handleChange}
+          onChange={updateInput}
+          value={formData.name || ''}
+          // value={contactInfo.name}
+          // onChange={handleChange}
         />
 				</dd>
 				<dt>E-mail</dt>
@@ -66,8 +84,10 @@ const Contact =()=> {
         <input
           type="email"
           name="email"
-          value={contactInfo.email}
-          onChange={handleChange}
+          // value={contactInfo.email}
+          // onChange={handleChange}
+          onChange={updateInput}
+          value={formData.email || ''}
         />
 				</dd>
 				<dt>Message</dt>
@@ -75,8 +95,10 @@ const Contact =()=> {
         <textarea
           type="text"
           name="message"
-          value={contactInfo.message}
-          onChange={handleChange}
+          // value={contactInfo.message}
+          // onChange={handleChange}
+          onChange={updateInput}
+          value={formData.message || ''}
         />
 				</dd>
         <button className="btn_send" type="submit">Send</button>

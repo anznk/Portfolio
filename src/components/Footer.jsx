@@ -1,5 +1,4 @@
 import React from "react";
-// import profile_pic from '../img/photo_me.jpg'
 import '../styles/Footer.scss';
 
 const text = "Designed & Built by Anzu Nakayama♡"
