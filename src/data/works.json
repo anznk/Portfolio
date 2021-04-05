@@ -1,0 +1,36 @@
+	{
+    "work":[
+      {
+        "name": "My Portfolio",
+        "text": "This is my portfolio project with React.js.",
+        "imgPath": "/img/portfolio.png",
+        "development": "React.js/ HTML5/ SCSS/ Firebase/ GoogleAnalytics",
+        "website":"anzunakayama.dev",
+        "github":"https://github.com/anznk/portfolio"
+      },
+      {
+        "name": "Landing Page",
+        "text": "This is my team project with React.js. We built Linton Wellness's homepage and his book trailer page. ",
+        "imgPath": "/img/larrywebsite.png",
+        "development": "React.js/ HTML5/ SCSS/ Aweber",
+        "website":"http://livewellwithpd.com/",
+        "github":"https://github.com/WADP-May/Larry-team"
+      },
+      {
+        "name": "Gatsby-website",
+        "text": "Made a personal blog site that is created using a Gatsby starter for my sister.",
+        "imgPath": "/img/gatsby-blog.png",
+        "development": "React.js/ graphql/ contentful",
+        "website":"website/anzunakayama.dev",
+        "github":"https://github.com/anznk/gatsby-website"
+      },
+      {
+        "name": "Fashion Ecommerce website",
+        "text": "Made this website for my friend's clothing brand.",
+        "imgPath": "/img/ecommerce-preview.png",
+        "development": " React.js/ Redux/ React Router/ node.js/ Firebase/ Stripe",
+        "website":"https://www.ecommerce.anzunakayama.dev/",
+        "github":"https://github.com/anznk/ecommerce-demo"
+      }
+    ]
+	}
