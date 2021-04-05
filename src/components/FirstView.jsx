@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/FirstView.scss';
-import FirstViewPic from '../img/FirstView2.jpg'
+import FirstViewPic from '/img/FirstView2.jpg'
 
 
 const FirstView = ({ play }) => {

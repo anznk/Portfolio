@@ -1,8 +1,8 @@
 import React from "react";
-import profile_pic from '../img/photo_me.jpg'
+import profile_pic from '/img/photo_me.jpg'
 import '../styles/About.scss';
-import GitHub from '../img/icon-github.svg'
-import LinkedIn from '../img/icon-linkedin.svg'
+import GitHub from '/img/icon-github.svg'
+import LinkedIn from '/img/icon-linkedin.svg'
 
 const myself = 
 "Hello! I'm Anzu, a front-end developer based in Vancouver, BC. \n\n Iam currently studying Web development at CICCC in Vancouver, Canada. Formerly, worked as a front-end developer & software engeneer over 5 years in Tokyo, Japan. I am passionate about creating web sites that look great and deliver value to users. I am energetic and passionate about learning new skills and technologies. "

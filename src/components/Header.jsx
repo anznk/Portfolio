@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Header.scss';
-import LinkedIn from '../img/icon-linkedin.svg'
-import GitHub from '../img/icon-github.svg'
+import LinkedIn from '/img/icon-linkedin.svg'
+import GitHub from '/img/icon-github.svg'
 import Dropdown from './Dropdown'
 
 const Header =()=> {
