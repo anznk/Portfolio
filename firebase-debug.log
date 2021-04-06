@@ -1,0 +1,23 @@
+[debug] [2021-04-06T02:33:29.309Z] ----------------------------------------------------------------------
+[debug] [2021-04-06T02:33:29.312Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:config:get
+[debug] [2021-04-06T02:33:29.312Z] CLI Version:   9.8.0
+[debug] [2021-04-06T02:33:29.312Z] Platform:      darwin
+[debug] [2021-04-06T02:33:29.312Z] Node Version:  v12.18.2
+[debug] [2021-04-06T02:33:29.314Z] Time:          Mon Apr 05 2021 19:33:29 GMT-0700 (Pacific Daylight Time)
+[debug] [2021-04-06T02:33:29.314Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-06T02:33:29.324Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-06T02:33:29.325Z] > authorizing via signed-in user
+[debug] [2021-04-06T02:33:29.326Z] [iam] checking project myportfolio-6f01c for permissions ["firebase.projects.get","runtimeconfig.configs.get","runtimeconfig.configs.list","runtimeconfig.variables.get","runtimeconfig.variables.list"]
+[debug] [2021-04-06T02:33:29.328Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-06T02:33:29.328Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-06T02:33:29.443Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Tue, 06 Apr 2021 02:33:30 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-06T02:33:29.465Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/myportfolio-6f01c:testIamPermissions  
+ {"permissions":["firebase.projects.get","runtimeconfig.configs.get","runtimeconfig.configs.list","runtimeconfig.variables.get","runtimeconfig.variables.list"]}
+[debug] [2021-04-06T02:33:29.557Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 06 Apr 2021 02:33:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=46","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-06T02:33:29.558Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/myportfolio-6f01c/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2021-04-06T02:33:29.924Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 06 Apr 2021 02:33:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-06T02:33:29.925Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/myportfolio-6f01c/configs  
+ 
