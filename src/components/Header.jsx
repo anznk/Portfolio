@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Header.scss';
-import LinkedIn from '/img/icon-linkedin.svg'
-import GitHub from '/img/icon-github.svg'
+// import LinkedIn from '/img/icon-linkedin.svg'
+// import GitHub from '/img/icon-github.svg'
 import Dropdown from './Dropdown'
 
 const Header =()=> {
@@ -23,10 +23,10 @@ const Header =()=> {
 					<li><a href="#works">WORKS</a></li>
 					<li><a href="#contact">CONTACT</a></li>
 					<li href="https://www.linkedin.com/in/anzu-nakayama-0660641b1/">
-						<img src={LinkedIn} alt="linkedin" />
+						<img src='/img/icon-linkedin.svg' alt="linkedin" />
 					</li>
 					<li href="https://github.com/anznk">
-						<img src={GitHub} alt="GitHub" />
+						<img src='/img/icon-github.svg' alt="GitHub" />
 					</li>
 				</ul>
 			</div>

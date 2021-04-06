@@ -1,8 +1,8 @@
 import React from "react";
-import profile_pic from '/img/photo_me.jpg'
+// import profile_pic from '/img/photo_me.jpg'
 import '../styles/About.scss';
-import GitHub from '/img/icon-github.svg'
-import LinkedIn from '/img/icon-linkedin.svg'
+// import GitHub from '/img/icon-github.svg'
+// import LinkedIn from '/img/icon-linkedin.svg'
 
 const myself = 
 "Hello! I'm Anzu, a front-end developer based in Vancouver, BC. \n\n Iam currently studying Web development at CICCC in Vancouver, Canada. Formerly, worked as a front-end developer & software engeneer over 5 years in Tokyo, Japan. I am passionate about creating web sites that look great and deliver value to users. I am energetic and passionate about learning new skills and technologies. "
@@ -24,11 +24,11 @@ const About =()=> {
 				</p>	
 				</div>
 				<div className="photo-sec">
-					<img src={profile_pic} alt="profile_pic" />
+					<img src='/img/photo_me.jpg' alt="profile_pic" />
 				</div>
 			</div>	
 			<div className="show_sp wrap-about">
-				<img src={profile_pic} alt="profile_pic" />
+				<img src='/img/photo_me.jpg' alt="profile_pic" />
 				<div className="title-sec">
 					<h2>About</h2>
 				</div>
@@ -41,10 +41,10 @@ const About =()=> {
 				</div>
 				<div className="link">
 					<li href="https://www.linkedin.com/in/anzu-nakayama-0660641b1/">
-						<img src={LinkedIn} alt="linkedin" />
+						<img src='/img/icon-linkedin.svg' alt="linkedin" />
 					</li>
 					<li href="https://github.com/anznk">
-						<img src={GitHub} alt="GitHub" />
+						<img src='/img/icon-github.svg' alt="GitHub" />
 					</li>
 				</div>
 			</div>

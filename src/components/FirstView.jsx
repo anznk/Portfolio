@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/FirstView.scss';
-import FirstViewPic from '/img/FirstView2.jpg'
+// import FirstViewPic from '/img/FirstView2.jpg'
 
 
 const FirstView = ({ play }) => {
@@ -11,7 +11,7 @@ const FirstView = ({ play }) => {
 				<h2> Anzu Nakayama</h2>
 			</div>
 			<div className="show_pc pic">
-				<img src={FirstViewPic} alt="FirstView" />
+				<img src='/img/FirstView2.jpg'  alt="FirstView" />
 			</div>
 		</section>
 
