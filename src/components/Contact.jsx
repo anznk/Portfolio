@@ -47,7 +47,6 @@ const Contact =()=> {
 				<h2>Contact</h2>
 			</div>
 			<div className="wrap-contact">
-			{/* <h3>Interested in working together?</h3> */}
 			<form onSubmit={handleSubmit}>
 			<dl>
 				<dt>Name</dt>
@@ -57,8 +56,6 @@ const Contact =()=> {
           name="name"
           onChange={updateInput}
           value={formData.name || ''}
-          // value={contactInfo.name}
-          // onChange={handleChange}
         />
 				</dd>
 				<dt>E-mail</dt>
@@ -66,8 +63,6 @@ const Contact =()=> {
         <input
           type="email"
           name="email"
-          // value={contactInfo.email}
-          // onChange={handleChange}
           onChange={updateInput}
           value={formData.email || ''}
         />
@@ -77,8 +72,6 @@ const Contact =()=> {
         <textarea
           type="text"
           name="message"
-          // value={contactInfo.message}
-          // onChange={handleChange}
           onChange={updateInput}
           value={formData.message || ''}
         />
@@ -92,5 +85,3 @@ const Contact =()=> {
 }
 
 export default Contact
-
-

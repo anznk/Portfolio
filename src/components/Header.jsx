@@ -6,15 +6,6 @@ import Dropdown from './Dropdown'
 
 const Header =(props)=> {
 	 const { onChangeHeadline } = props;
-
-    // const [header, setHeader] = useState("default");
-    
-    // document.onscroll = () => {
-    //     setHeader(
-    //       document.body.scrollTop > 100 || document.documentElement.scrollTop > 100 ?
-    //         "scrolled" : "default");
-    //   };
-
 	return (
 		<header>
 			<div className="header show_pc">
@@ -29,11 +20,8 @@ const Header =(props)=> {
 					<li href="https://github.com/anznk">
 						<img src={GitHub} alt="GitHub" />
 					</li>
-					
 					<li><a onClick={() => onChangeHeadline('en')}>En</a></li>
 					<li><a onClick={() => onChangeHeadline('ja')}>Ja</a></li>
-					{/* <li><a onClick={onChangeHeadline('en')}>En</a></li> */}
-					{/* <li><a onClick={onChangeHeadline('ja')}>Ja</a></li> */}
 				</ul>
 			</div>
 			<div className="header show_sp">

@@ -7,14 +7,22 @@ origin: true
 const gmailEmail = functions.config().gmail.email
 const gmailPassword = functions.config().gmail.password
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 exports.submit = functions.https.onRequest((req, res) => {
 res.set('Access-Control-Allow-Origin', '*')
 res.set('Access-Control-Allow-Methods', 'GET, PUT, POST, OPTIONS')
 res.set('Access-Control-Allow-Headers', '*')
 
+<<<<<<< HEAD
 console.log('request type', req.method);
 //cors(req, res, () => {
+=======
+// console.log('request type', req.method);
+// cors(req, res, () => {
+>>>>>>> origin/main
 // if (req.method !== 'POST') {
 //   return
 // }
