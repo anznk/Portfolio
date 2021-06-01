@@ -5,7 +5,8 @@ import '../styles/Skills.scss';
 import 'swiper/css/swiper.css';
 import Swiper from 'react-id-swiper';
 
-const Skills =()=> {
+const Skills =(props)=> {
+
 	const title1 = "Front-end development";
 	const text1 = 
 	"Developed, maintained and tested the website for inbound tourists with Javascript, HTML5, CSS3 for 2 years.\n Now I'm working whth React.js, Node.js, HTML5, SCSS.";
@@ -28,13 +29,13 @@ const Skills =()=> {
 			{/* <div className='foo' data-delighter> */}
 				<div className="wrap-skills">
 					<div className="skill-text">
-						<h3>{title1}</h3>
-						<p>{text1.split('\n').map((str, index) => (
+						<h3>{props.skill1}</h3>
+						<p>{props.skill2.split('\n').map((str, index) => (
 							<React.Fragment key={index}>{str}<br /></React.Fragment>
 							))}
 						</p>	
-						<h3>{title2}</h3>
-						<p>{text2.split('\n').map((str, index) => (
+						<h3>{props.skill3}</h3>
+						<p>{props.skill4.split('\n').map((str, index) => (
 							<React.Fragment key={index}>{str}<br /></React.Fragment>
 							))}
 						</p>	

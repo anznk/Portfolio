@@ -4,12 +4,7 @@ import '../styles/About.scss';
 import GitHub from '../img/icon-github.svg'
 import LinkedIn from '../img/icon-linkedin.svg'
 
-const myself = 
-"Hello! I'm Anzu, a software developer based in Vancouver, BC. \n\n Iam currently studying Web development at CICCC in Vancouver, Canada. Formerly, worked as a front-end developer & software developer over 5 years in Tokyo, Japan. I am passionate about creating web sites that look great and deliver value to users. I am energetic and passionate about learning new skills and technologies. "
-const myself_jp = 
-"大学卒業後、大手通信企業にてSEとして5年間勤務して来ました。Javaを使用したシステム開発、JavaScriptやHTML/CSSを使用したウェブアプリケーションの開発を行っておりました。/n 退職後はバンクーバの専門学校にてウェブ開発を勉強しており、Reactを使ったウェブアプリケーションの作成をメインに取り組んでおります。"
-
-const About =()=> {
+const About =(props)=> {
 
 	return (
 		<section className="sec-About" id="about" >
@@ -20,7 +15,7 @@ const About =()=> {
 			<div className="show_pc wrap-about">
 				<div className="text-sec">
 				<p>
-				{myself.split('\n').map((str, index) => (
+				{props.text.split('\n').map((str, index) => (
 				<React.Fragment key={index}>{str}<br /></React.Fragment>
 				))}
 				</p>	
@@ -36,7 +31,7 @@ const About =()=> {
 				</div>
 				<div className="text-sec">
 				<p>
-				{myself.split('\n').map((str, index) => (
+				{props.text.split('\n').map((str, index) => (
 				<React.Fragment key={index}>{str}<br /></React.Fragment>
 				))}
 				</p>	

@@ -41,26 +41,6 @@ const Contact =()=> {
       })
   }
 
-  // const [contactInfo, setContactInfo] = useState({
-  //   name: '',
-  // 	email: '',
-  // 	message: ''
-  // });
-
-  // const handleChange = event => {
-  //   setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });
-  // };
-  // const handleSubmit = event => {
-  //   event.preventDefault();
-  // };
-  // const resetForm =() => {
-  //    setContactInfo({ 
-  //       name: '',
-  // 	    email: '',
-  //     	message: ''
-  //    });
-  // }
-
 	return (
 		<section className="sec-Contact" id="contact">
 			<div className="title-sec">

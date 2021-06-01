@@ -4,7 +4,8 @@ import LinkedIn from '../img/icon-linkedin.svg'
 import GitHub from '../img/icon-github.svg'
 import Dropdown from './Dropdown'
 
-const Header =()=> {
+const Header =(props)=> {
+	 const { onChangeHeadline } = props;
 
     // const [header, setHeader] = useState("default");
     
@@ -28,6 +29,11 @@ const Header =()=> {
 					<li href="https://github.com/anznk">
 						<img src={GitHub} alt="GitHub" />
 					</li>
+					
+					<li><a onClick={() => onChangeHeadline('en')}>En</a></li>
+					<li><a onClick={() => onChangeHeadline('ja')}>Ja</a></li>
+					{/* <li><a onClick={onChangeHeadline('en')}>En</a></li> */}
+					{/* <li><a onClick={onChangeHeadline('ja')}>Ja</a></li> */}
 				</ul>
 			</div>
 			<div className="header show_sp">
