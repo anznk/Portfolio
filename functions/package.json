@@ -13,10 +13,7 @@
   },
   "main": "index.js",
   "dependencies": {
-<<<<<<< HEAD
-=======
     "cors": "^2.8.5",
->>>>>>> origin/main
     "firebase-admin": "^9.2.0",
     "firebase-functions": "^3.11.0",
     "nodemailer": "^6.5.0"

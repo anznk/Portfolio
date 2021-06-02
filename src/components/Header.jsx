@@ -5,7 +5,8 @@ import GitHub from '../img/icon-github.svg'
 import Dropdown from './Dropdown'
 
 const Header =(props)=> {
-	 const { onChangeHeadline } = props;
+	 const { lang, onChangeHeadline } = props;
+	 console.log("lang", lang);
 	return (
 		<header>
 			<div className="header show_pc">
@@ -20,9 +21,17 @@ const Header =(props)=> {
 					<li href="https://github.com/anznk">
 						<img src={GitHub} alt="GitHub" />
 					</li>
-					<li><a onClick={() => onChangeHeadline('en')}>En</a></li>
-					<li><a onClick={() => onChangeHeadline('ja')}>Ja</a></li>
-				</ul>
+					{lang === 'en' ? 
+						<>
+							<li className="language"><a className="red" onClick={() => onChangeHeadline('en')}>En</a></li>
+							<li className="languageRight"><a onClick={() => onChangeHeadline('ja')}>Ja</a></li>
+						</>:
+						<>
+							<li className="language"><a onClick={() => onChangeHeadline('en')}>En</a></li>
+							<li className="languageRight"><a className="red" onClick={() => onChangeHeadline('ja')}>Ja</a></li>
+						</>
+					}	
+					</ul>
 			</div>
 			<div className="header show_sp">
 				<div className="logo top">

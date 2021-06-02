@@ -1,4 +1,5 @@
 @media screen and (min-width:750px) {
+
 .header{
 	height: 50px;
 	width: 1300px;
@@ -14,7 +15,7 @@
 		text-align: right;
 	}
 	ul{
-		margin-left: 10%;
+		margin-left: 15%;
 		li{
 			display: inline-block;
 			vertical-align: middle;
@@ -34,6 +35,17 @@
 			letter-spacing: 0.1em;
 			line-height: 130px;
 			padding: 0 2px 2px;
+		}
+		.language{
+			margin-left: 32px;
+		}
+		.languageRight{
+			padding:0;
+			margin:0;
+		}
+		.red{
+			color: #DFCBBD;
+			font-size: 1.1rem;
 		}
 	}
 }
