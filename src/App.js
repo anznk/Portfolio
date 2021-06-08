@@ -27,8 +27,8 @@ const App = () => {
     <Header lang={currentLang} onChangeHeadline={(language) => changeLanguage(language)} />
     <FirstView />
     <About text={t('text.about')}/>
-    <Skills skill1={t('text.skill1')} skill2={t('text.skill2')} skill3={t('text.skill3')} skill4={t('text.skill4')}/>
     <Works />
+    <Skills skill1={t('text.skill1')} skill2={t('text.skill2')} skill3={t('text.skill3')} skill4={t('text.skill4')}/>
     <Contact />
     <Footer />
     </main>
