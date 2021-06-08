@@ -26,6 +26,7 @@ const Works =()=> {
 	}
 	const params = {
 		direction: 'vertical',
+		height: 600,
 		autoplay: {
 			delay: 2200
 		},
