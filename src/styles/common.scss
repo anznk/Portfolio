@@ -48,7 +48,7 @@ summary {
 
 
 
-@media screen and (min-width:749px) {
+@media screen and (min-width:770px) {
 	.show_sp {
 		display: none;
 	}
@@ -60,7 +60,7 @@ summary {
 	}
 	section{
 		width: 100%;
-		height: 100vh;
+		height: 650px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -132,7 +132,26 @@ summary {
 	}
 }
 
-@media screen and (max-width:749px) {
+// for ipad
+@media screen and (min-width:770px) and (max-width:1030px) {
+	.body{
+		width: 100%;
+	}
+	.title-sec{
+		left: 1.5em;
+	}
+	.sec-About{   
+		margin-top: 0;
+	}
+	.sec-Skills{   
+		margin-top: 0;
+	}
+	.sec-Contact{   
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width:769px) {
 	.show_pc {
 		display: none;
 	}
@@ -149,12 +168,5 @@ summary {
 		letter-spacing: 0.1em;
 		line-height: 1.0em;
 		margin: 50px 0 40px;
-	}
-}
-
-// for ipad
-@media screen and (min-width:750px) and (max-width:1030px) {
-	.body{
-		width: 900px;
 	}
 }

@@ -1,6 +1,7 @@
-@media screen and (min-width:750px) {
+@media screen and (min-width:770px) {
 	.Sec-FirstView{
-		height: 100vh;
+		// height: 100vh;
+		height: 650px;
 	}
 	.Sec-FirstView{
 		.pic{
@@ -8,18 +9,21 @@
 		}
 		img{
 		width: 1200px;
-		height: 100vh;
+		// height: 100vh;
+		height: 650px;
 		margin-left: 10%;
 		}	
 	}
 }
 
 //for ipad
-@media screen and (min-width:750px) and (max-width:1030px) {
+@media screen and (min-width:770px) and (max-width:1030px) {
+
 	.Sec-FirstView{
 		img{
-		width: 1020px;
-		height: 100vh;
+		width: 90%;
+		// height: 100vh;
+		height: 650px;
 		}	
 	}
 }
