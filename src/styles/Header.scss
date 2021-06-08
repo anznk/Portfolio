@@ -50,20 +50,7 @@
 	}
 }
 }
-//for ipad
-@media screen and (min-width:750px) and (max-width:1030px) {
-	.header{
-		height: 40px;
-		width: 900px;
-		ul{
-			margin-left: 0;
-		}
-		li+li{
-			margin-left: 0;
-		}
-	}
-	
-}
+
 @media screen and (max-width:749px) {
 	.header{
 		top: 0;
@@ -115,4 +102,18 @@
 			}
 		}
 	}
+}
+//for ipad
+@media screen and (min-width:750px) and (max-width:1030px) {
+	.header{
+		height: 40px;
+		width: 900px;
+		ul{
+			margin-left: 0;
+		}
+		li+li{
+			margin-left: 0;
+		}
+	}
+	
 }
