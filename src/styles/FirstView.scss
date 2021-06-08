@@ -13,3 +13,13 @@
 		}	
 	}
 }
+
+//for ipad
+@media screen and (min-width:750px) and (max-width:1030px) {
+	.Sec-FirstView{
+		img{
+		width: 1020px;
+		height: 100vh;
+		}	
+	}
+}

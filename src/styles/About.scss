@@ -40,6 +40,19 @@
 	}
 }
 
+//for ipad
+@media screen and (min-width:750px) and (max-width:1030px) {
+	.wrap-about{
+		img{
+			width: 80%;
+		}
+		.text-sec{
+			width: 450px;
+		}
+	}
+
+}
+
 @media screen and (max-width:749px) {
 	.wrap-about{
 		width: 90%;

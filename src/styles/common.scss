@@ -46,7 +46,9 @@ summary {
 		display: block;
 }
 
-@media screen and (min-width:750px) {
+
+
+@media screen and (min-width:749px) {
 	.show_sp {
 		display: none;
 	}
@@ -147,5 +149,12 @@ summary {
 		letter-spacing: 0.1em;
 		line-height: 1.0em;
 		margin: 50px 0 40px;
+	}
+}
+
+// for ipad
+@media screen and (min-width:750px) and (max-width:1030px) {
+	.body{
+		width: 900px;
 	}
 }
