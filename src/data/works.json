@@ -21,7 +21,7 @@
         "text": "Made a personal blog site that is created using a Gatsby starter for my sister.",
         "imgPath": "/img/gatsby-blog.png",
         "development": "React.js/ graphql/ contentful",
-        "website":"website/anzunakayama.dev",
+        "website":"https://website.anzunakayama.dev/",
         "github":"https://github.com/anznk/gatsby-website"
       },
       {
