@@ -54,8 +54,8 @@ const Works =()=> {
 					</div>
 					<div className="development">{MainWork.Development}</div>
 					<div className="button-area">
-						<a href={MainWork.Website} className="btn">Website</a>
-						<a href={MainWork.GitHub} className="btn">Github</a>
+						<a href={MainWork.Website} target = "_blank" className="btn">Website</a>
+						<a href={MainWork.GitHub} target = "_blank" className="btn">Github</a>
 					</div>
 				</div>
 				<div className="sub-works">
