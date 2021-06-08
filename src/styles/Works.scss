@@ -1,4 +1,4 @@
-@media screen and (min-width:770px) {
+@media screen and (min-width:835px) {
 .wrap-works{
 	// margin-left: 100px;
 	margin-left: 10%;
@@ -97,7 +97,7 @@
 }
 
 //for ipad
-@media screen and (min-width:770px) and (max-width:1030px) {
+@media screen and (min-width:835px) and (max-width:1030px) {
 	.main-works {
 		img{
 			width: 400px;
@@ -127,9 +127,10 @@
 	}
 
 }
-@media screen and (max-width:769px) {
+@media screen and (max-width:834px) {
 	.skill-item{
     text-align: center;
+		margin-bottom: 20px;
 		img{
 			width: 100%;
 		}
@@ -140,6 +141,7 @@
 		}
 		.button-area{
 			text-align: center;
+
 		}
 		.btn {
 			display: inline-block;
@@ -149,7 +151,7 @@
 			border: solid 2px #aaa;;
 			border-radius: 5px;
 			transition: .4s;
-			margin: 20px;
+			margin: 15px;
 			font-size: 1.3em;
 		}
 		.btn:hover {
