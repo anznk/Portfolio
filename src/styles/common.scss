@@ -99,8 +99,11 @@ summary {
 		// position:  absolute;
 		// z-index: 300;
 	}
-	.sec-Contact{
+	.sec-Works{
 		margin-top: 50px;
+	}
+	.sec-Contact{
+		// margin-top: 50px;
 		// top: 200vh;  
 		// width: 100vw;
 		// height: 100vh;
@@ -132,24 +135,6 @@ summary {
 	}
 }
 
-// for ipad
-@media screen and (min-width:835px) and (max-width:1030px) {
-	.body{
-		width: 100%;
-	}
-	.title-sec{
-		left: 1.5em;
-	}
-	.sec-About{   
-		margin-top: 0;
-	}
-	.sec-Skills{   
-		margin-top: 0;
-	}
-	.sec-Contact{   
-		margin-top: 0;
-	}
-}
 
 @media screen and (max-width:834px) {
 	.show_pc {
@@ -168,5 +153,24 @@ summary {
 		letter-spacing: 0.1em;
 		line-height: 1.0em;
 		margin: 50px 0 40px;
+	}
+}
+
+// for ipad
+@media screen and (min-width:835px) and (max-width:1030px) {
+	.body{
+		width: 100%;
+	}
+	.title-sec{
+		left: 1.5em;
+	}
+	.sec-About{   
+		margin-top: 0;
+	}
+	.sec-Skills{   
+		margin-top: 0;
+	}
+	.sec-Contact{   
+		margin-top: 0;
 	}
 }
